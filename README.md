@@ -202,7 +202,7 @@ Codigo:
 
 
 
-        if (/*Qual condição deve ser verdadeira?*/)
+        if (/*Qual condição deve ser verdadeira? (nesse caso se for (x=5)/(y=2) é aceito)*/)
         {
             Console.WriteLine("A Divisão final é de" + resposta);
         }
