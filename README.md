@@ -30,6 +30,7 @@ A pontuação será da seguinte forma:
 
   Teremos o total de 2 codigos, Ao final do questionario do forms, terão dois campos onde deverão ser escritos os dois ultimos códigos.
 
+## Forms: https://docs.google.com/forms/d/e/1FAIpQLSfGnFL5guTnPo4sj8bRVf42VszK6hanNEfykbyvA_bCze1w7Q/viewform?usp=publish-editor
 
   ## Questão 1
 
@@ -157,7 +158,7 @@ Codigo:
             } while (option != 10);
         }
 
-        public double Adicao()
+        public static double Adicao()
         {
             double x, y;
             Console.WriteLine("Escreva o primeiro numero");
@@ -167,7 +168,7 @@ Codigo:
 
             return/*Resposta*/;
         }
-        public double Subratao()
+        public static double Subratao()
         {
         double x, y;
         Console.WriteLine("Escreva o primeiro numero");
@@ -177,7 +178,8 @@ Codigo:
 
         return/*Resposta*/;
         }
-         public double Multiplicacao()
+        
+         public static double Multiplicacao()
         {
         double x, y;
         Console.WriteLine("Escreva o primeiro numero");
@@ -210,7 +212,7 @@ Codigo:
         }
         }
 
-        public double Potenciacao()
+        public static double Potenciacao()
         {
             double x, y;
         Console.WriteLine("Escreva o primeiro numero");
@@ -299,7 +301,98 @@ Codigo:
   ## Questão 2
 
   
+Complete o programa com as estruturas necessárias para que ele funcione conforme o enunciado abaixo:
+  
+O programa deve pedir ao usuarios quantos pares de números inteiros ele deseja inserir.
+  
+Para cada par de números inseridos, o programa deve calcular e exibir:
 
+* O maior número
+* A soma dos dois números
+* Se os dois numeros sao iguais ou diferentes
+* Se a soma dos dois numeros é par ou impar
+
+ Para cada par de números digitados dentro do for, o programa deve entrar em um menu de operações, que deve funcionar em um loop, permitindo que o usuário escolha várias operações sobre o mesmo par.*/
+            
+            
+            int numero1, numero2, soma, maior, opcao, quantidade;
+            bool  par, impar;
+
+            Console.WriteLine("Digite a quantidade de pares de numeros inteiros que voce deseja inserir:");
+            quantidade = int.Parse(Console.ReadLine());
+            Console.Clear();
+            //Qual a estrutura de repetição correta para repetir o processo de inserção de pares de numeros, for, foreach, while, do while?
+            (int i = 0; i < quantidade; i++)
+            {
+                Console.WriteLine("Digite o primeiro numero inteiro:");
+                numero1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digite o segundo numero inteiro:");
+                numero2 = int.Parse(Console.ReadLine());
+
+               //Qual estrutura de repetição adequada?
+                {
+                     
+                     Console.Clear();
+                     Console.WriteLine("\t\tEscolha a operacao que deseja realizar com os numeros digitados:");
+                     Console.WriteLine("1 - Exibir o maior numero");
+                     Console.WriteLine("2 - Exibir a soma dos dois numeros");
+                     Console.WriteLine("3 - Verificar se os numeros sao iguais ou diferentes");
+                     Console.WriteLine("4 - Verificar se a soma dos numeros e par ou impar");
+                     Console.WriteLine("0 - Inserir um novo par de numeros");
+                     opcao = int.Parse(Console.ReadLine());
+                    Console.Clear();
+                    //Qual a estrutura condicional correta para tratar as opcoes, if, if-else, switch?
+                      
+                      (opcao)
+                     {
+                        case 1:
+                            maior = (numero1 > numero2) ? numero1 : numero2;
+                            Console.WriteLine("O maior numero e: " + maior);
+                            break;
+                        case 2:
+                            soma = numero1 + numero2;
+                            Console.WriteLine("A soma dos dois numeros e: " + soma);
+                            break;
+                        case 3:
+                        //Qual a estrutura condicional correta para tratar as opcoes, if, else, else-if, switch?
+                              (numero1 == numero2)
+                            {
+                                Console.WriteLine("Os numeros sao iguais.");
+                            }
+                            //Qual a estrutura condicional correta para tratar as opcoes, if, else, else-if, switch?
+                            
+                            {
+                                Console.WriteLine("Os numeros sao diferentes.");
+                            }
+                            break;
+                        case 4:
+                            soma = numero1 + numero2;
+                            //Qual a estrutura condicional correta para tratar as opcoes, if, else, else-if, switch?
+                              (soma % 2 == 0)
+                            {
+                                Console.WriteLine("A soma dos numeros e par.");
+                            }
+                            //Qual a estrutura condicional correta para tratar as opcoes, if, else, else-if, switch?
+                            
+                            {
+                                Console.WriteLine("A soma dos numeros e impar.");
+                            }
+                            break;
+                        case 0:
+                            Console.WriteLine("Inserindo um novo par de numeros.");
+                            break;
+                        default:
+                            Console.WriteLine("Opcao invalida. Tente novamente.");
+                            break;
+                     }
+                     Console.WriteLine("Pressione Enter para continuar...");
+                     Console.ReadLine();
+                } while(opcao != 0);
+                
+
+            }
+
+            Console.WriteLine("Fim do programa.");
 
 
 
