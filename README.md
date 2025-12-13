@@ -1,6 +1,6 @@
 # Prova
 
-Hoje é o nosso ultimo dia de aula, e faremos hoje nossa prova.
+Hoje é o nosso último dia de aula, e faremos hoje nossa prova.
 
 # Pontuação
 
@@ -34,21 +34,21 @@ A pontuação será da seguinte forma:
 
   ## Questão 1
 
-  Temos Um Aplicativo de calculadora Capaz de fazer as seguinte Operações, Adição, Subtração, Multiplicação, Divisão, Elevevar um numero a outro, fazer a raiz quadrada desse número.
+  Temos Um Aplicativo de calculadora Capaz de fazer as seguinte Operações, Adição, Subtração, Multiplicação, Divisão, Elevar um numero a outro, fazer a raiz quadrada desse número.
 
-  Além disso, ele é capaz de fazer calculos de formas geiometricas, e retornar o perimetro e área dessa figura. Das figuras Geométricas em especifico, nós temos:
+  Além disso, ele é capaz de fazer calculos de formas geiométricas, e retornar o perimetro e área dessa figura. Das figuras Geométricas em especifico, nós temos:
 
   * Retangulo/Quadrados
   * Circulos
   * Triangulos (assumindo um triangulo retangulo, aquele que possui um angulo de 90°)
 
-O Cósigo atualmente se encontra totalmente modularizado, Porem, a lógica e os calculos estão inacabados.
+O Código atualmente se encontra totalmente modularizado, Porém, a lógica e os calculos estão inacabados.
 
 Além disso, precisamos verificar se alguns números são válidos para determinadas operações, já que em determinados calculos como divisão de algum numero por 0, e calculo de formas gemoetricas não podem ter valores iguais ou abaixo de 0.
 
 #### O que devemos fazer?
 
-Complete todos os Metodos faltantes, de acordo com o que o Exercício pede.
+Complete todos os Métodos faltantes, de acordo com o que o Exercício pede.
 
 #### ALgumas regras
 
